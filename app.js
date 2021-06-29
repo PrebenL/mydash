@@ -1,9 +1,8 @@
 const express = require('express'),
-    app = express();
-
-const check = require('./brain/checking.js');
-const add = require('./brain/add.js');
-const wipe = require('./brain/wipe.js');
+    app = express(),
+    bodyParser = require('body-parser'),
+    exphbs = require('express-handlebars'),
+    path = require('path');
 
 const proc = require('./config/db_config');
 

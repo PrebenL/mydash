@@ -1,1 +1,37 @@
-<h1>hello</h1>hello
+<h1 id=main-header-title>~PANEL-DASH~</h1>
+<div class="flexbox">
+	<div>
+		<div class="card">
+			<img class="cato-img" src="./web_images/code.svg">
+			<h1 class="card-header">{{{data.LeftHeader}}}</h1>
+			{{#each data.LeftResults as |item|}}
+				<p class="url-content">
+					<a href="{{item.[3]}}">{{item.[2]}}</a>
+				</p>
+			{{/each}}
+		</div>
+	</div>
+	<div>
+		<div class="card">
+			<img class="cato-img" src="./web_images/code.svg">
+			<h1 class="card-header">{{{data.CenterHeader}}}</h1>
+			{{#each data.CenterResults as |item|}}
+				<p class="url-content">
+					<a href="{{item.[3]}}">{{item.[2]}}</a>
+				</p>
+			{{/each}}
+		</div>
+	</div>
+	<div>
+		<div class="card">
+			<img class="cato-img" src="./web_images/code.svg">
+			<h1 class="card-header">{{{data.RightHeader}}}</h1>
+			{{#each data.RightResults as |item|}}
+				<p class="url-content">
+					<a href="{{item.[3]}}">{{item.[2]}}</a>
+				</p>
+			{{/each}}
+		</div>
+	</div>
+</div>
+	

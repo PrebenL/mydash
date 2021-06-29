@@ -15,5 +15,3 @@ const vPool = db.createPool({
 
 
 module.exports = {vPool, vPort};
-
-//module.exports = {pool};
