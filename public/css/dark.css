@@ -6,10 +6,11 @@ body{
 
 footer{
   text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: -999;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -999;
+  color: #465962;
 }
 a{
   text-decoration-line: none;
