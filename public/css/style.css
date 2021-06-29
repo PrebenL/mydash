@@ -1,0 +1,109 @@
+body{
+  background: #253345;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+footer{
+  text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -999;
+}
+a{
+  text-decoration-line: none;
+}
+
+a:hover, a:visited, a:link, a:active{
+  text-decoration: none;
+  color: #C70E12;;
+}
+
+.flexbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 75vh;
+}
+.flexbox > div {
+  margin: 15px;
+}
+
+.card{
+  border: solid 1px black;
+  background: #182D47;
+  padding: 20px;
+  transition:0.9s;
+}
+.card:hover{
+  transform: scaleY(1.3) scaleX(1.1);
+}
+.card:hover p{
+  transform: scaleY(1.0);
+  transform-origin: bottom;
+}
+
+.url-content{
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+  text-align: center;
+  color: #C70E12;
+  background: #253345;
+}
+
+.card-header{
+  font-family: 'Bangers', cursive;
+  font-size: 50px;
+  text-align: center;
+  color: #465962;
+  
+}
+
+.cato-img{
+
+  width:42px;
+  height:42px;
+  display: block;
+  margin: 0 auto;
+}
+#main-header-title{
+  font-size: 70px;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  color: #465962;
+}
+#search-bar{
+
+  text-align: center;
+}
+#panel-control{
+
+  text-align: center;
+  padding-bottom: 15px;
+}
+#add-button{
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background:#182D47;
+  color: #C70E12;
+}
+#wipe-button{
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background:#182D47;
+  color: #C70E12;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .flexbox {
+  display: block;
+  }
+}
