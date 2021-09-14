@@ -1,9 +1,12 @@
-version: '3'
+version: '3.9'
 services:
   paneldash:
     build:
-      context: .
+      context: "."
       dockerfile: Dockerfile
-      image: mydash/latest
-      ports:
-        - "4343:8080"
+    image: mydash
+    ports:
+      - "4343:8080"
+networks:
+  mydash:
+    name: mydash_network
