@@ -2,7 +2,7 @@ require('dotenv').config({ path: './config/config.env'});
 const db = require('mariadb');
 
 //Process env variables
-const vPort = 8080;
+const vPort = process.env.PORT;
 const vPool = db.createPool({
     host: process.env.DB_I, 
     user: process.env.DB_U, 

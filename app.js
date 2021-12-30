@@ -19,6 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //ROUTING
 
 app.get('/', require('./routes/index'));
+app.get('/second', require('./routes/second'));
 
 app.listen(proc.vPort, 
     console.log('Server running on port: ' + proc.vPort)
